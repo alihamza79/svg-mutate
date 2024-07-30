@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "konva": "^9.3.14",
+    "react-konva": "^18.2.10",
+    "react-svg": "^16.1.34"
+  }
+}
