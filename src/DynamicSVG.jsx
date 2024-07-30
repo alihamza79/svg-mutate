@@ -1,9 +1,6 @@
 import React from 'react';
 
-const DynamicSVG = ({ height, width, arcRadius }) => {
-  const cornerWidth = 12;
-  const cornerHeight = 11;
-
+const DynamicSVG = ({ height, width, arcRadius, cornerWidth, cornerHeight }) => {
   return (
     <svg
       className="injected-svg partViewerSvgNqp"
