@@ -5,7 +5,7 @@ const DynamicSVG = ({ height, width, arcRadius, cornerWidth, cornerHeight }) => 
     <svg
       className="injected-svg partViewerSvgNqp"
       style={{ width: '100%', height: '100%' }}
-      viewBox={`${-width / 2 - 32} ${-height / 2 - 32} ${width + 64} ${height + 64}`}
+      viewBox={`0 0 ${width} ${height}`}
       preserveAspectRatio="xMidYMid meet"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -29,7 +29,7 @@ const DynamicSVG = ({ height, width, arcRadius, cornerWidth, cornerHeight }) => 
           <path className="Dim selectedDim" d="M 10 0 L 0 3 L 10 6 z"></path>
         </marker>
       </defs>
-      <g id="all" transform={`translate(0,${height / 2}) scale(1,-1)`} strokeWidth="0.25%" stroke="black" fill="none">
+      <g id="all" transform={`translate(0,${height}) scale(1,-1)`} strokeWidth="0.25%" stroke="black" fill="none">
         <path fill="#E9E9F0" d={`M 0.00 0.00 L ${(width / 2) - arcRadius} 0.00 A${arcRadius},${arcRadius} 0  1,0 ${(width / 2) + arcRadius},0.00  L ${width} 0.00 L ${width} ${height - cornerHeight} L ${width - cornerWidth} ${height} L ${cornerWidth} ${height} L 0.00 ${height - cornerHeight} L 0.00 0.00 `}></path>
         <g id="engrave" fill="black" stroke="none"></g>
         <g fontSize={height / 10} fill="black">
